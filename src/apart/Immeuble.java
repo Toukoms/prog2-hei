@@ -1,3 +1,4 @@
+package apart;
 public class Immeuble extends Endroit {
   private Integer numberOfFloor;
   private Quartier quartier;

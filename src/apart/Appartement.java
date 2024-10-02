@@ -1,8 +1,4 @@
-enum Status {
-  FREE,
-  OWNED,
-  IN_PROCESS
-}
+package apart;
 
 public class Appartement {
 
@@ -10,11 +6,11 @@ public class Appartement {
   private String title;
   private String description;
   private Integer price;
-  private Status status;
+  private ApartStatus status;
 
   private Endroit endroit;
 
-  public Appartement(String id, String title, String description, Integer price, Status status) {
+  public Appartement(String id, String title, String description, Integer price, ApartStatus status) {
     this.id = id;
     this.title = title;
     this.description = description;
@@ -38,7 +34,7 @@ public class Appartement {
     return price;
   }
 
-  public Status getStatus() {
+  public ApartStatus getStatus() {
     return status;
   }
 
@@ -62,7 +58,7 @@ public class Appartement {
     this.price = price;
   }
 
-  public void setStatus(Status status) {
+  public void setStatus(ApartStatus status) {
     this.status = status;
   }
 

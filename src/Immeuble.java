@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class Immeuble extends Endroit {
   private Integer numberOfFloor;
   private Quartier quartier;
